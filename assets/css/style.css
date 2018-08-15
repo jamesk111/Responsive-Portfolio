@@ -208,10 +208,12 @@ input[type=submit]:hover {
         min-width: 100%;
         justify-content: center;
     }
+
     .brand {
         width: 100%;
         text-align: center;
     }
+
     .profile-image {
         float: none;
         display: block;
@@ -228,7 +230,12 @@ input[type=submit]:hover {
     .nav-normal ul li a {
         line-height: 30px;
     }
+
     .profile-image {
         max-width: 100%;
+    }
+
+    input[type=submit] {
+        width: 100%;
     }
 }
