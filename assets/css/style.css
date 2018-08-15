@@ -34,11 +34,7 @@ p {
     margin: 20px 0;
 }
 
-/* Overall Nav settings */
-/* .nav-wrapper {
-    background-color: rgba(51, 51, 51, 0.75);
-} */
-
+/* Nav settings */
 .nav-normal {
     overflow: hidden;
     background-color: rgba(51, 51, 51, 0.75);
@@ -92,10 +88,9 @@ p {
 /* Content Settings */
 .content-wrapper {
 	max-width: 960px;
-    margin: 0 auto;
+    margin: 20px auto 5px auto;
     background-color: white;
     padding: 0 20px 20px 20px;
-    margin-top: 20px;
     border-radius: 25px;
     border: 2px solid #7F7373;
     overflow: auto;
@@ -103,34 +98,27 @@ p {
 }
 
 .content-wrapper hr {
-    background-color: #490909;
+    background-color: #000;
     border: 0;
     height: 2px;
 }
 
-.row::after {
-    display: table;
-    clear: both;
-}
-
-.column {
-    float: left;
-    width: 33%;
+/* Portfolio Projects */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .project-wrapper {
     height: 200px;
     width: 200px;
     position: relative;
-    margin: 15px auto 0 auto;
+    margin: 15px 15px 0 15px;
     box-shadow: 5px 5px 5px 1px #aaa;
 }
 
-.project-wrapper:first-child {
-    margin: 0 auto;
-}
-
-.project-wrapper p {
+.project-wrapper > p {
     position: absolute;
     top: 75%;
     left: 50%;
@@ -203,16 +191,18 @@ input[type=submit]:hover {
 }
 
 /* Medium Screens */
-@media only screen and (max-width: 300px) {
-
+@media only screen and (max-width: 980px) {
+    .content-wrapper {
+        margin: 20px 20px 5px 20px;
+    }
 }
 
 /* Small Screens */
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 768px) {
 
 }
 
 /* Extra Small Screens */
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 640px) {
 
 }
