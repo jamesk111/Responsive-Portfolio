@@ -60,6 +60,9 @@ p {
     list-style-type: none;
     float: right;
     display: flex;
+    animation-duration: 1s;
+    animation-name: slidein;
+    animation-direction: normal;
 }
 
 .nav-normal ul li {
@@ -110,6 +113,9 @@ p {
     border: 2px solid #333;
     padding: 2px;
     border-radius: 50%;
+    animation-duration: 3s;
+    animation-name: growin;
+    animation-direction: normal;
 }
 
 /* Portfolio Projects */
@@ -187,6 +193,37 @@ input[type=submit]:hover {
     background-color: rgba(51, 51, 51, 0.75);
     text-align: center;
     color: #f2f2f2;
+}
+
+.footer p {
+    animation-duration: 1s;
+    animation-name: slidein;
+    animation-direction: normal;
+}
+
+/* Animations */
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+@keyframes growin {
+    from {
+        height: 0%;
+        width: 0%
+    }
+
+    to {
+        height: 100%;
+        width: 100%;
+    }
 }
 
 /* medium screens */
