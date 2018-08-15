@@ -60,9 +60,6 @@ p {
     list-style-type: none;
     float: right;
     display: flex;
-    animation-duration: 1s;
-    animation-name: slidein;
-    animation-direction: normal;
 }
 
 .nav-normal ul li {
@@ -78,6 +75,7 @@ p {
     padding: 0 16px;
     text-decoration: none;
     line-height: 75px;
+    transition: background-color 2s;
 }
 
 .nav-normal ul li a:hover,
@@ -195,25 +193,7 @@ input[type=submit]:hover {
     color: #f2f2f2;
 }
 
-.footer p {
-    animation-duration: 1s;
-    animation-name: slidein;
-    animation-direction: normal;
-}
-
 /* Animations */
-@keyframes slidein {
-    from {
-        margin-left: 100%;
-        width: 300%;
-    }
-
-    to {
-        margin-left: 0%;
-        width: 100%;
-    }
-}
-
 @keyframes growin {
     from {
         height: 0%;
